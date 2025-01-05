@@ -67,7 +67,7 @@ while ch23.lower()!='y':
                     break
                 else:
                     print("Account Doesn't Exists")
-            while 1==1:
+            while True:
                 psd=int(input("Enter your pin: "))
                 c1.execute("select pin from account where phone='{}' and Account_Type='Customer'".format(phn))
                 for xm in c1:
@@ -105,7 +105,7 @@ while ch23.lower()!='y':
             c1.execute("create table pur6(S_NO INT, Name_of_Item varchar(50), QUANTITY INT, AMT FLOAT, AmtGst float)")
         except:
             print('')
-        while 1==1:
+        while True:
             ch2=input("Enter the ICode of the item to buy: ")
             ch3=input("Enter the quantity to buy: ")
             r="select (Price_in_Rs)*{} from stocks where S_No={}".format(ch3,ch2)
