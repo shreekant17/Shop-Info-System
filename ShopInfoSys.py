@@ -1,5 +1,5 @@
 import mysql.connector as sql
-while true:
+while True:
     passw=input("Enter Mysql Password: ")
     try:
         c=sql.connect(host="localhost", user="root", passwd=passw)#password
